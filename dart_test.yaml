@@ -1,0 +1,20 @@
+# Test tags. Unit tests carry none; select groups with `-t` / `-x`.
+tags:
+  # The test asserting pngMinifierVersion matches pubspec.yaml.
+  version:
+  # End-to-end runs over the committed fixtures (PngSuite, Kodak crops,
+  # Kenney tilemaps): decode against package:image, round-trips, savings.
+  integration:
+    timeout: 4x
+  # Tests that run the command line, in-process or as a real process.
+  cli:
+    timeout: 4x
+  # Output hashes that must be identical on the VM, dart2js and dart2wasm.
+  golden:
+
+# The CI web job runs the platform-independent tests on Chrome, compiled
+# by dart2js and dart2wasm.
+override_platforms:
+  chrome:
+    settings:
+      headless: true

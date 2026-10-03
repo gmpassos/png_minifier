@@ -1,0 +1,4 @@
+# Shells reject CRLF scripts.
+*.sh text eol=lf
+# Fixtures are bytes: never touch line endings in them.
+*.png binary

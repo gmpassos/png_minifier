@@ -1,0 +1,2 @@
+# Configuration for `dart run dependency_validator`.
+allow_pinned_deps: true

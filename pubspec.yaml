@@ -1,0 +1,33 @@
+name: png_minifier
+description: >-
+  Minify PNG images in pure Dart: many optimisation strategies compete and the
+  smallest result that meets the quality target wins. Lossless by default,
+  bounded-error palette quantisation on request; deterministic on the VM, JS
+  and WebAssembly; with presets and a CLI.
+version: 1.0.0
+repository: https://github.com/gmpassos/png_minifier
+issue_tracker: https://github.com/gmpassos/png_minifier/issues
+
+topics:
+  - png
+  - image
+  - compression
+  - optimization
+  - quantization
+
+environment:
+  sdk: ^3.13.0
+
+executables:
+  png_minifier: png_minifier
+
+dependencies:
+  archive: ^4.0.9
+  args: ^2.7.0
+
+dev_dependencies:
+  crypto: ^3.0.7
+  dependency_validator: ^5.0.6
+  image: ^4.5.4
+  lints: ^6.1.0
+  test: ^1.32.0
